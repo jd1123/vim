@@ -23,6 +23,10 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/syntastic'
 Plugin 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/nerdtree'
+"Bundle 'wincent/Command-T'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'airblade/vim-gitgutter' 
+Bundle 'kien/ctrlp.vim'
 " ======== END PLUGINS =====
 
 
@@ -78,4 +82,13 @@ filetype on
 filetype indent plugin on
 syntax on
 nnoremap <F5> :GundoToggle<CR>
+set foldlevel=99
+set showtabline=2
+
+let g:NERDTreeDirArrows=0
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+
 colo jellybeans
