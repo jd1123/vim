@@ -27,6 +27,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'airblade/vim-gitgutter' 
 Bundle 'kien/ctrlp.vim'
+Bundle 'Shougo/neocomplete.vim'
 " ======== END PLUGINS =====
 
 
@@ -60,14 +61,14 @@ endif
 
 " The following are commented out as they cause vim to behave a lot
 " differently from regular Vi. They are highly recommended though.
-"set showcmd		" Show (partial) command in status line.
-"set showmatch		" Show matching brackets.
-"set ignorecase		" Do case insensitive matching
+set showcmd		" Show (partial) command in status line.
+set showmatch		" Show matching brackets.
+set ignorecase		" Do case insensitive matching
 "set smartcase		" Do smart case matching
 "set incsearch		" Incremental search
 "set autowrite		" Automatically save before commands like :next and :make
 "set hidden		" Hide buffers when they are abandoned
-"set mouse=a		" Enable mouse usage (all modes)
+set mouse=a		" Enable mouse usage (all modes)
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
@@ -84,11 +85,15 @@ syntax on
 nnoremap <F5> :GundoToggle<CR>
 set foldlevel=99
 set showtabline=2
+set laststatus=2
+set statusline+=%F
 
 let g:NERDTreeDirArrows=0
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
+
+let g:ycm_path_to_python_interpreter = '/usr/bin/python'
 
 colo jellybeans
