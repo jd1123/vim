@@ -27,7 +27,8 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'airblade/vim-gitgutter' 
 Bundle 'kien/ctrlp.vim'
-Bundle 'Shougo/neocomplete.vim'
+Bundle 'fatih/vim-golang'
+"Bundle 'Shougo/neocomplete.vim'
 " ======== END PLUGINS =====
 
 
@@ -87,6 +88,13 @@ set foldlevel=99
 set showtabline=2
 set laststatus=2
 set statusline+=%F
+set number
+
+" Make tabs not stink
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+
 
 let g:NERDTreeDirArrows=0
 
