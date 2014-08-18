@@ -28,6 +28,9 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'airblade/vim-gitgutter' 
 Bundle 'kien/ctrlp.vim'
 Bundle 'Shougo/neocomplete.vim'
+Bundle 'fatih/vim-go'
+Bundle 'dag/vim2hs'
+Bundle 'lukerandall/haskellmode-vim'
 " ======== END PLUGINS =====
 
 
@@ -95,5 +98,9 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 
 let g:ycm_path_to_python_interpreter = '/usr/bin/python'
+
+set tabstop=4
+set shiftwidth=4
+set number
 
 colo jellybeans
